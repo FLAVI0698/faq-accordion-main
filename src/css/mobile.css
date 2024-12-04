@@ -1,0 +1,50 @@
+@media (max-width: 400px) {
+    main {
+        background-image: url(../assets/images/background-pattern-mobile.svg);
+        padding: 0 25px;
+    }
+
+    .accordion {
+        border-radius: 10px;
+
+        h1 {
+            display: flex;
+            font-family: "WorkSans";
+            font-size: 25px;
+            margin-bottom: 0;
+        }
+
+        h1::before {
+            align-self: center;
+            width: 20px;
+            height: 20px;
+        }
+
+        .items {
+            margin-top: 20px;
+        }
+
+        .items .item {
+            background-position: top 6px right 0;
+
+            .question {
+                font-size: 16px;
+                width: 85%;
+                margin: 20px 0;
+            }
+
+            .response {
+                font-size: 13px;
+            }
+        }
+
+        .items .item:nth-child(2) {
+            background-position: top -3px right;
+        }
+
+        .items .item:not(:last-child) {
+            /* border: 1px solid; */
+            margin-bottom: 0;
+        }
+    }
+}
